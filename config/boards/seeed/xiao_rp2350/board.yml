@@ -2,6 +2,6 @@ board:
   name: xiao_rp2350
   vendor: seeed
   socs:
-    - name: rp2350
+    - name: rp2350a
       variants:
         - name: zmk

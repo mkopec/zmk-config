@@ -5,7 +5,7 @@
 
 /dts-v1/;
 
-#include <raspberrypi/rpi_pico2/rp2350.dtsi>
+#include <raspberrypi/rpi_pico2/rp2350a.dtsi>
 #include <arm/raspberrypi/rp2040-boot-mode-retention.dtsi>
 
 / {
