@@ -2,4 +2,4 @@ name: zmk-config-my-macropad
 build:
   cmake-ext: false
   settings:
-    board_root: config
+    board_root: .
