@@ -1,5 +1,7 @@
 board:
-  extend: xiao_rp2350
-  variants:
-    - name: zmk
-      qualifier: rp2350
+  name: xiao_rp2350
+  vendor: seeed
+  socs:
+    - name: rp2350
+      variants:
+        - name: zmk
