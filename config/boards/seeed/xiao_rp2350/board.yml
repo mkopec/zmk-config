@@ -5,3 +5,4 @@ board:
     - name: rp2350a
       variants:
         - name: zmk
+          cpucluster: arm
