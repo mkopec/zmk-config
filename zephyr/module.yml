@@ -1,0 +1,6 @@
+name: zmk-config-my-macropad
+build:
+  cmake-ext: false
+  settings:
+    board_root: config
+    shield_root: config

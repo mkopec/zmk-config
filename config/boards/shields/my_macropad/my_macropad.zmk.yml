@@ -1,0 +1,7 @@
+file_format: "1"
+id: my_macropad
+name: My Macropad
+type: shield
+requires: [xiao_rp2350//zmk]
+features:
+  - keys

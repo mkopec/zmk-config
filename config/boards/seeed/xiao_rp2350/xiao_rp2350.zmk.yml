@@ -1,0 +1,9 @@
+file_format: "1"
+id: xiao_rp2350//zmk
+name: Seeed Studio XIAO RP2350
+type: board
+arch: arm
+outputs:
+  - usb
+url: https://wiki.seeedstudio.com/xiao_rp2350_getting_started/
+exposes: [seeed_xiao]

@@ -1,0 +1,4 @@
+---
+include:
+  - board: xiao_rp2350//zmk
+    shield: my_macropad
