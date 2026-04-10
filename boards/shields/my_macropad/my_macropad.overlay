@@ -11,6 +11,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout;
+        zmk,studio-rpc-uart = &studio_rpc_usb_uart;
     };
 
     default_transform: keymap_transform_0 {
@@ -60,5 +61,11 @@
             , <&gpio0 6 GPIO_ACTIVE_HIGH>
             , <&gpio0 7 GPIO_ACTIVE_HIGH>
             ;
+    };
+};
+
+&zephyr_udc0 {
+    studio_rpc_usb_uart: studio_rpc_usb_uart {
+        compatible = "zephyr,cdc-acm-uart";
     };
 };
