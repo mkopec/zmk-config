@@ -8,6 +8,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_studio_unlock {
+            timeout-ms = <100>;
+            key-positions = <6 8>;  /* bottom-left + bottom-right */
+            bindings = <&studio_unlock>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

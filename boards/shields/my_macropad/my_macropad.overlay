@@ -5,11 +5,13 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+        zmk,physical-layout = &physical_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -21,6 +23,25 @@
             RC(1,0) RC(1,1) RC(1,2)
             RC(2,0) RC(2,1) RC(2,2)
         >;
+    };
+
+    physical_layout: physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+
+        keys  //                     w   h    x    y
+            = <&key_physical_attrs 100 100    0    0 0 0 0>
+            , <&key_physical_attrs 100 100  100    0 0 0 0>
+            , <&key_physical_attrs 100 100  200    0 0 0 0>
+            , <&key_physical_attrs 100 100    0  100 0 0 0>
+            , <&key_physical_attrs 100 100  100  100 0 0 0>
+            , <&key_physical_attrs 100 100  200  100 0 0 0>
+            , <&key_physical_attrs 100 100    0  200 0 0 0>
+            , <&key_physical_attrs 100 100  100  200 0 0 0>
+            , <&key_physical_attrs 100 100  200  200 0 0 0>
+            ;
     };
 
     kscan0: kscan {
