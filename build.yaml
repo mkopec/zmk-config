@@ -1,4 +1,4 @@
 ---
 include:
-  - board: xiao_rp2350//zmk
+  - board: xiao_rp2350/rp2350a/m33/zmk
     shield: my_macropad
