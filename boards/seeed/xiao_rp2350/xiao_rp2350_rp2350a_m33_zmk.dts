@@ -5,8 +5,9 @@
 
 /dts-v1/;
 
-#include <raspberrypi/rpi_pico2/rp2350a.dtsi>
-#include <arm/raspberrypi/rp2040-boot-mode-retention.dtsi>
+#include <raspberrypi/rpi_pico/rp2350a.dtsi>
+#include <raspberrypi/rpi_pico/m33.dtsi>
+#include <raspberrypi/rp2350-boot-mode-retention.dtsi>
 
 / {
     model = "Seeed Studio XIAO RP2350";
@@ -15,7 +16,7 @@
     chosen {
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
-        zephyr,flash-controller = &ssi;
+        zephyr,flash-controller = &qmi;
         zephyr,code-partition = &code_partition;
     };
 
